@@ -76,3 +76,5 @@
 
 - git pull origin 브런치명 --allow-unrelated-histories 를 사용
 
+- 서로 다른 A,B 프로젝트에서 저장소 주소가 만들어지지 않은 B 프로젝트가 저장소 주소 있는 A프로젝트로 push 하면 push reject 오류가 발생한다.
+- 이때, allow 를 이용해 원격저장소 브런치 허용권한을 가져오게 되면 프라이빗으로 자동으로 저장소 주소가 생성된다.
