@@ -43,4 +43,36 @@
 
 # merge 병합 중 충돌이 난 파일을 보여주고 선택할 수 있게 해준다.
 
-123
+# 원격 브랜치 삭제하기
+- git push <원격 저장소 이름> -d <원격 브랜치 이름>
+
+상황
+
+
+
+ 1. 신규 프로젝트 생성
+
+2. 소스 생성 및 초기 설정
+
+3. git init을 진행
+
+4. git hub 에 개인 repository remote 수행 (git remote add origin [repository url] )
+
+5. 생성한 소스를 커밋 과 푸시 시도
+
+6. push reject 발생
+
+7. pull 시도 하면 refusing to merge unrelated histories 로 pull 실패
+
+
+원인
+
+ - 신규로 만든 프로젝트와 기존에 있는 프로젝트는 공통 적으로 같은 조상을 보고 있지 않아서 서로 다른 프로젝트라고 인식 함.
+
+   따라서 독립적인 두 프로젝트를 병합하려면 --allow-unrelated-histories를 사용해야 함.
+
+
+해결책
+
+- git pull origin 브런치명 --allow-unrelated-histories 를 사용
+
