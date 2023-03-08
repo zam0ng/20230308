@@ -38,4 +38,7 @@
 # 브런치의 제거
 - git branch -d 제거할 브런치 이름 / ex> git branch -d main
 
+# 저장소 병합
+- git merge 병합할 브런치 이름
 
+# merge 병합 중 충돌이 난 파일을 보여주고 선택할 수 있게 해준다.
